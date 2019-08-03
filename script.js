@@ -3,7 +3,7 @@ let analise = document.querySelector('div#analise')
 
 function adicionar(){
     let num = document.querySelector('input#num1')
-    let display = document.querySelector('select#display')
+    let display = document.querySelector('ul#display')
     let n = Number(num.value)
     
     if (num.value.length == 0){ // Checa caixa vazia
@@ -17,7 +17,8 @@ function adicionar(){
     
     }else {
 
-        var opt = document.createElement('option')
+        var opt = document.createElement('li')
+        opt.classList.add('list-group-item')
         display.appendChild(opt)
 
         opt.innerHTML = `Valor ${n} adicionado`
