@@ -48,7 +48,7 @@ function analisar(){
             soma += newArr[pos]
         }
 
-        analise.innerHTML = `Ao todo temos ${newArr.length} números cadastrados <p>
+        analise.innerHTML = `<p> Ao todo temos ${newArr.length} números cadastrados<p>
         O maior número é ${newArr[newArr.length-1]}<p>
         O menor número é ${newArr[0]}<p>
         Somando todos os valores, temos ${soma}<p>
@@ -56,3 +56,9 @@ function analisar(){
         
         }
     }
+
+     function limpar(){
+        arr = []
+        analise.innerHTML =''
+        display.innerHTML = ''
+    } 
